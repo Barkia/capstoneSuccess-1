@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Awesome Word Predictor</title>
+  <meta charset="utf-8">
+  <meta name="description" content="My Awesome Word Predictor">
+  <meta name="author" content="Vivek Tiwari">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>My Awesome Word Predictor</h1>
+    <h2>Data Science Capstone Project-2016</h2>
+    <p>Vivek Tiwari<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="class myCss" id="slide1" style="background:;">
+  <hgroup>
+    <h2>What is &#39;My Awesome Word Predictor&#39;?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>This is an quick and easy text prediction application.</li>
+<li>The purpose of creating an app like this is to offer advantages over standard typing methods on mobile devices.
+
+<ul>
+<li>Improved typing speed</li>
+<li>Improved spelling and accuracy</li>
+</ul></li>
+<li>The project data sponsor was SwiftKey who already have an awesome app like this on android.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class myCss" id="slide2" style="background:;">
+  <hgroup>
+    <h2>The App Interface</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="figures/interface.png" alt="My Awesome Word Predictor"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class myCss" id="slide3" style="background:;">
+  <hgroup>
+    <h2>Explaining the App Interface</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p><strong>&#39;My Awesome Word Predictor&#39;</strong> allows you to enter a custom word or phrase.</p></li>
+<li><p>Once you click &quot;Predict Next Word&quot;(or simply press enter), <strong>&#39;My Awesome Word Predictor&#39;</strong> displays your selected input before and after processing. (usually not much change for words available except minor case difference)</p></li>
+<li><p><strong>&#39;My Awesome Word Predictor&#39;</strong> will output the most likely word in red text and a list of possible alternatives in the table below.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class myCss" id="slide4" style="background:;">
+  <hgroup>
+    <h2>Working of the App Logic</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p><strong>&#39;My Awesome Word Predictor&#39;</strong> uses the <a href="http://www.corpora.heliohost.org/" title="HC Corpora">HC Corpora</a> data set determining word frequency.</p></li>
+<li><p>The <a href="http://www.corpora.heliohost.org/" title="HC Corpora">HC Corpora</a> data set is screened and processed to removed extraneous characters and then is categorized into the most frequent word combinations (N-grams).</p></li>
+<li><p>Using these N-gram frequencies <strong>&#39;My Awesome Word Predictor&#39;</strong> can take the user submitted sentences and quickly calculate the most likely next word.</p></li>
+<li><p>The algorithm developed to predict the next word in a user-entered text string was based on a classic N-gram model.<a href="http://en.wikipedia.org/wiki/N-gram" title="Wiki Link">Wiki Link</a></p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class myCss" id="slide5" style="background:;">
+  <hgroup>
+    <h2>References</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>The code to the application can be found on <a href="https://github.com/vivekdtiwari/capstoneSuccess" title="Github">Github</a></p></li>
+<li><p>Working Version of <a href="http://vivekdtiwari.shinyapps.io/TheNextWord/" title="MyAwesomeWordPredictor">MyAwesomeWordPredictor</a></p></li>
+<li><p>The source <a href="http://www.corpora.heliohost.org/" title="HC Corpora">HC Corpora</a> data set and associated <a href="http://www.corpora.heliohost.org/aboutcorpus.html" title="ReadMe">ReadMe</a>.</p></li>
+<li><p>Thanks to everyone on Coursera forums who helped out when stuck with initial data-exploration issues.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='What is &#39;My Awesome Word Predictor&#39;?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The App Interface'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Explaining the App Interface'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Working of the App Logic'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='References'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
